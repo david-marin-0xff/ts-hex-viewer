@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Hex Viewer</title>
+  </head>
+
+  <body>
+    <h1>TypeScript Hex Viewer</h1>
+
+    <section class="info">
+  <p>
+    Browser-based hex viewer built with TypeScript. // david-marin-0xff
+  </p>
+
+  <ul>
+    <li>Files are processed entirely in memory</li>
+    <li>Recommended maximum file size: <strong>5–15 MB</strong></li>
+    <li>Best suited for binary, text, and small media files</li>
+    <li>No file contents are uploaded or stored</li>
+  </ul>
+</section>
+
+
+    <input type="file" id="fileInput" />
+
+    <div class="viewer">
+      <pre id="offsets"></pre>
+      <pre id="hex"></pre>
+      <pre id="ascii"></pre>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+body {
+  font-family: system-ui, sans-serif;
+  padding: 1rem;
+}
+
+.viewer {
+  display: grid;
+  grid-template-columns: 90px 1fr 1fr;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+pre {
+  font-family: Consolas, monospace;
+  font-size: 14px;
+  white-space: pre;
+  overflow: auto;
+  max-height: 70vh;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+.hex-byte {
+  color: #005cc5;
+}
+
+.ascii-char {
+  color: #22863a;
+}
+
+.ascii-dot {
+  color: #999;
+}
+
+.hex-byte {
+  cursor: pointer;
+}
+
+.selected {
+  background: #ffd33d;
+  color: black;
+}
+.info {
+  background: #f6f8fa;
+  border: 1px solid #d0d7de;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  max-width: 800px;
+}
+
+.info ul {
+  margin: 0.5rem 0 0 1.25rem;
+}
